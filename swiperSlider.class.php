@@ -389,7 +389,7 @@ class swiperSlider extends WidgetHandler
     }
 }
 
-class swiperSliderItem extends Object
+class swiperSliderItem extends BaseObject
 {
 
     var $browser_title = null;
