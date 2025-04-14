@@ -2,8 +2,8 @@
 <widget version="0.2">
     <title xml:lang="ko">Swiper Slider 위젯</title>
     <description xml:lang="ko">Rhymix 전용 Swiper Slider 위젯입니다.</description>
-    <version>1.0.1</version>
-    <date>2020-10-15</date>
+    <version>1.0.3</version>
+    <date>2025-04-14</date>
 	<author email_address="glanceyes@naver.com" link="http://glanceyes.net">
 		<name xml:lang="ko">Glanceyes</name>
 	</author>
