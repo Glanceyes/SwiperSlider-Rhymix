@@ -114,6 +114,7 @@
 				$args->modules_info = $oModuleModel->getMidList($obj);
 			// 대상 모듈이 선택되어 있으면 해당 모듈만 추출
 			} else {
+				$obj = new StdClass;
 				$obj->module_srls = $args->module_srls;
 				$output = executeQueryArray('widgets.swiperSlider.getMids', $obj);
 				if($output->data) {
@@ -163,6 +164,7 @@
             $oDocumentModel = &getModel('document');
 
             // 분류 구함
+            $obj = new StdClass;
             $obj->module_srl = $args->module_srl;
             $output = executeQueryArray('widgets.swiperSlider.getCategories',$obj);
             if($output->toBool() && $output->data) {
@@ -290,6 +292,7 @@
             $oTemplate = &TemplateHandler::getInstance();
 
             // 위젯에 넘기기 위한 변수 설정
+			$widget_info = new StdClass;
 			$widget_info->identifying_way = $args->identifying_way;
 			$widget_info->cs_color = $args->cs_color;
             $widget_info->modules_info = $args->modules_info;
